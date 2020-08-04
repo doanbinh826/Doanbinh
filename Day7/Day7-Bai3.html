@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 3</title>
+</head>
+<body>
+	<script>
+		var Str= window.prompt("nhap chuoi: ");
+		var NewStr= Str.trim();	
+		var array = NewStr.split(" ");
+		var res = " ";
+		var NewArray = [];
+
+		for(var i=0; i<= array.length; i++){
+			NewArray[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+		}
+		res += NewArray[i];
+
+		var JoinArray= NewArray.join("-");
+		document.write(JoinArray);
+	</script>
+</body>
+</html>
